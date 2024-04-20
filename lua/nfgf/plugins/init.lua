@@ -44,7 +44,7 @@ return {
   },
 
 
---[[  NFGF
+--[[  NFGF]]--
   { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -239,7 +239,7 @@ return {
         },
       }
     end,
-  },  NFGF --]]
+  },--  NFGF --]]
 
   { -- Autoformat
     'stevearc/conform.nvim',
