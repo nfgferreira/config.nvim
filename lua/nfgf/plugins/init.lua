@@ -44,7 +44,6 @@ return {
   },
 
 
---[[  NFGF Mason cannot be installed on my computer.
   { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -239,9 +238,8 @@ return {
         },
       }
     end,
-  },  NFGF --]]
+  },
 
---[[ NFGF Depends on LSP
   { -- Autoformat
     'stevearc/conform.nvim',
     lazy = false,
@@ -277,9 +275,8 @@ return {
         -- javascript = { { "prettierd", "prettier" } },
       },
     },
-  }, NFGF --]]
+  },
 
---[[ NFGF Depends on LSP
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
@@ -383,7 +380,7 @@ return {
         },
       }
     end,
-  },  NFGF --]]
+  },
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },

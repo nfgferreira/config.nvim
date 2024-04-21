@@ -13,6 +13,6 @@ return {
     require("nvim-tree").setup {}
 
     local keymap = vim.keymap
-    keymap.set ("n", "<leader>a", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+    keymap.set ("n", "<F1>", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
   end,
 }
