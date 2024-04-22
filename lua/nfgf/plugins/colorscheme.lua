@@ -20,6 +20,11 @@ return {
           colors.bg_visual = bg_visual
           colors.comment = comment
         end,
+        on_highlights = function(highlights, colors)
+--          print("on_highlights")
+--          print( vim.inspect(highlights.Comment) )
+          highlights.Comment.style.italic = false
+        end,
       })
       -- load the colorscheme here
       vim.cmd([[colorscheme tokyonight]])
