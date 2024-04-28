@@ -19,16 +19,24 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- *.INC files are Fortran
---
-vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
-  pattern = {"*.INC"},
-  callback = function()
-    vim.schedule(function()
-      vim.bo.filetype = "fortran"
-    end)
-  end
+vim.filetype.add({
+  extension = {
+    INC = 'fortran'
+  },
+--  pattern = {
+--    ['.INC'] = 'fortran',
+--  },
 })
+
+---- *.INC files are Fortran
+--vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+--  pattern = {"*.INC"},
+--  callback = function()
+--    vim.schedule(function()
+--      vim.bo.filetype = "fortran"
+--    end)
+--  end
+--})
 
 -- What follows comes from Kickstart
 
