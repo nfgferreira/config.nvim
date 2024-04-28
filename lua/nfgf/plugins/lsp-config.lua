@@ -122,17 +122,7 @@ return {
       -- see https://clangd.llvm.org/config.html
       local lspconfig = require("lspconfig")
       lspconfig.clangd.setup{}
-
-      lspconfig.fortls.setup{
-        cmd = {
-          'fortls',
-          '--debug_log'
---          '--lowercase_intrinsics',
---          '--hover_signature',
---          '--hover_language=fortran',
---          '--use_signature_help'
-        }
-      }
+      lspconfig.fortls.setup{}
   end,
 
 }
