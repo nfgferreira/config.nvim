@@ -13,7 +13,7 @@ return {
     require("nvim-tree").setup {
       filters = {
         custom = {
-          ".OBJ$", ".obj$", ".lst$", ".LST"
+          ".obj$", ".lst$"
         }
       }
     }
