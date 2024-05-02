@@ -1,5 +1,10 @@
 -- Visual block mode special character, since C-v does not work if you are in WSL.
-vim.keymap.set('n', '<M-v>', '<C-v>', { desc = 'Visual block mode' })
+-- (actually you can change that in the monitor)
+-- vim.keymap.set('n', '<M-v>', '<C-v>', { desc = 'Visual block mode' })
+
+-- Buffer control (should be good for fast switching)
+vim.keymap.set('n', '<F2>', '<Esc>:bprev<Enter>', { desc = 'Go to previous buffer' })
+vim.keymap.set('n', '<F3>', '<Esc>:bnext<Enter>', { desc = 'Go to next buffer' })
 
 -- The following is basically from Kickstart
 
