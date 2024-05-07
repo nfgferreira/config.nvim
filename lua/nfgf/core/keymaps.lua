@@ -2,6 +2,12 @@
 -- (actually you can change that in the monitor)
 -- vim.keymap.set('n', '<M-v>', '<C-v>', { desc = 'Visual block mode' })
 
+-- Tabs. Suggestions from here:
+-- https://www.reddit.com/r/vim/comments/9h043h/how_do_you_guys_work_with_tabs/
+vim.keymap.set('n', '<C-t>', '<Esc>:tabnew<Enter>', { desc = 'Create new tab' })
+vim.keymap.set('n', '<C-M-l>', '<Esc>:tabn<Enter>', { desc = 'Go to next tab' })
+vim.keymap.set('n', '<C-M-h>', '<Esc>:tabp<Enter>', { desc = 'Go to previous tab' })
+
 -- Buffer control (should be good for fast switching)
 vim.keymap.set('n', '<F2>', '<Esc>:bprev<Enter>', { desc = 'Go to previous buffer' })
 vim.keymap.set('n', '<F3>', '<Esc>:bnext<Enter>', { desc = 'Go to next buffer' })
