@@ -7,6 +7,7 @@
 vim.keymap.set('n', '<C-t>', '<Esc>:tabnew<Enter>', { desc = 'Create new tab' })
 vim.keymap.set('n', '<C-M-l>', '<Esc>:tabn<Enter>', { desc = 'Go to next tab' })
 vim.keymap.set('n', '<C-M-h>', '<Esc>:tabp<Enter>', { desc = 'Go to previous tab' })
+vim.keymap.set('n', '<C-x>', '<Esc>:tabc<Enter>', { desc = 'Close current tab' })
 
 -- Buffer control (should be good for fast switching)
 vim.keymap.set('n', '<F2>', '<Esc>:bprev<Enter>', { desc = 'Go to previous buffer' })
