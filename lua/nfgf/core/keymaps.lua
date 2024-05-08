@@ -4,14 +4,14 @@
 
 -- Tabs. Suggestions from here:
 -- https://www.reddit.com/r/vim/comments/9h043h/how_do_you_guys_work_with_tabs/
-vim.keymap.set('n', '<C-t>', '<Esc>:tabnew<Enter>', { desc = 'Create new tab' })
-vim.keymap.set('n', '<C-M-l>', '<Esc>:tabn<Enter>', { desc = 'Go to next tab' })
-vim.keymap.set('n', '<C-M-h>', '<Esc>:tabp<Enter>', { desc = 'Go to previous tab' })
-vim.keymap.set('n', '<C-x>', '<Esc>:tabc<Enter>', { desc = 'Close current tab' })
+vim.keymap.set('n', '<C-t>', ':tabnew<Enter>', { desc = 'Create new tab' })
+--vim.keymap.set('n', '<C-M-l>', ':tabn<Enter>', { desc = 'Go to next tab' })
+--vim.keymap.set('n', '<C-M-h>', ':tabp<Enter>', { desc = 'Go to previous tab' })
+vim.keymap.set('n', '<C-x>', ':tabc<Enter>', { desc = 'Close current tab' })
 
 -- Buffer control (should be good for fast switching)
-vim.keymap.set('n', '<F2>', '<Esc>:bprev<Enter>', { desc = 'Go to previous buffer' })
-vim.keymap.set('n', '<F3>', '<Esc>:bnext<Enter>', { desc = 'Go to next buffer' })
+vim.keymap.set('n', '<F2>', ':bprev<Enter>', { desc = 'Go to previous buffer' })
+vim.keymap.set('n', '<F3>', ':bnext<Enter>', { desc = 'Go to next buffer' })
 
 -- The following is basically from Kickstart
 
